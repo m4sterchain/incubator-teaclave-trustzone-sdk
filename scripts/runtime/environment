@@ -21,8 +21,6 @@
 # config/environment (Main configuration - loads active configs)
 # =============================================================================
 
-# Exit on any error
-set -euo pipefail
 
 # Get config script directory
 SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")/config"
@@ -93,5 +91,3 @@ echo "  CROSS_COMPILE_HOST: $CROSS_COMPILE_HOST"
 echo "  OPTEE_CLIENT_EXPORT: $OPTEE_CLIENT_EXPORT"
 echo ""
 echo "QEMU Shared Directory: $QEMU_HOST_SHARE_DIR"
-echo ""
-echo "[env] Configured Successfully for building OP-TEE applications."
